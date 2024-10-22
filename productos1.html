@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/productos1.css">
+</head>
+<body>
+    <nav>
+        <ul type="none">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="productos.html">Agregar Carrito</a></li>
+          <li>
+            <a href="https://accounts.google.com/v3/signin/identifier?elo=1&ifkv=AdF4I77XqwetsHLjoSDC94Iz8tUSis-wiyUlsBpgEV8DDq95AdJGxgZlk0XzGmRg_fFQrl71sZun&ddm=0&flowName=GlifWebSignIn&flowEntry=ServiceLogin&continue=https%3A%2F%2Faccounts.google.com%2FManageAccount%3Fnc%3D1">Usuario</a>
+          </li>
+          <li><a href="registro.html">Contacto</a></li>
+        </ul>
+      </nav>
+        <div class="productos-container"></div>
+      <script>
+        const getCarros = async ()=>{
+            const response =await fetch("productos.json")
+            const data = await response.json();
+            let out='<div class="productos-container">'
+            data.forEach((productos) => {
+
+                const tabla1= document.querySelector('.celulares .datos')
+                out+= `
+                <div class="autos"><div class="celulares"><h3>${productos.modelo}</h3>
+                <img src="${productos.imagen}">
+                <div class="datos"><p>Produccion:${productos.produccion}</p>
+                <p>Millaje:${productos.millaje}</p>
+                <p><a href="${productos.enlace}" class ="boton">Ver Producto</a></p>
+                </div></div></div>
+                
+                `
+            })
+            document.querySelector('.productos-container').innerHTML=out }
+            //tabla1.appenchild(out)
+            getCarros()
+    </script>
+</body>
+</html>

@@ -1,0 +1,100 @@
+body{
+    background-color: rgb(10, 9, 9);
+    }
+    /* Primer punto de quiebre */
+    @media(min-width:768px){
+      .productos-container{
+          display: grid;
+          grid-template-columns: repeat(2,1fr);
+      }
+    }
+    /* Segundo punto de quiebre */
+    @media(min-width:900px){
+      .productos-container{
+          display: grid;
+          grid-template-columns: repeat(3,1fr);
+          }
+    }
+    /* Tercer punto de quiebre */
+    @media(min-width:1000px){
+      .productos-container{
+          display: grid;
+          grid-template-columns: repeat(4,1fr);
+          }
+    }
+    nav ul{
+      text-align: center;
+      display: grid;
+      grid-template-columns: repeat(4,1fr);
+      padding: 1rem;
+      box-shadow: 4px 5px 6px#680ebb;
+    }
+    li:hover{
+      font-size: large;
+      border-radius: 15px;
+      background-color: rgb(135, 8, 209);
+    }
+    /* Estilos para el contenedor principal */
+    .productos-container {
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 2rem;
+        column-gap: 2rem;
+        justify-content: center;
+        padding: 30px;
+      }
+      /* Estilos para las tarjetas de producto */
+      .producto{
+        text-align: center;
+        margin: 20px;
+        padding: 2rem;
+        border: 1.5px solid #fffcfc;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        width: 250px;
+      }
+      .producto:hover {
+        transform: scale(1.06);
+        box-shadow: 20px 20px 20px rgba(141, 35, 211, 0.3);
+      }
+      .celulares{
+        border: solid 2px white;
+        border-radius: 20px;
+        color: white;
+        text-align: center;
+      }
+     img {
+        width: 95%;
+        height: 15rem;
+        object-fit: cover;
+        border-radius: 10px 10px 0 0;
+      }
+      .producto {
+        font-size: 14px;
+        color: #666;
+      }
+      .boton{
+        background-color: #505aee; 
+        border: none;
+        border-radius: 5px;
+        padding: 10px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+      .boton:hover {
+        background-color: #17a9e2;
+      }
+      a{
+        text-decoration: none;
+        color: white;
+      }
+    .icono{
+        padding: 0.5rem;
+        text-decoration: none;
+        width: 40px;
+        height: 40px;
+        transition: transform 0.2s ease-in-out;
+    }
+    .icono:hover {
+        transform: scale(1.5);
+    }

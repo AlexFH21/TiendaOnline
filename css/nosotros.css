@@ -1,0 +1,57 @@
+body{
+    background-color: black;
+}
+.logo{
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    text-align: center;
+    border-radius: 10px;
+}
+h1{
+    width: 100%;
+    color: white;
+    text-align: center;
+    font-style: oblique;  
+}
+p{
+    color: white;
+    font-size: 16px;
+}
+li{
+    color: whitesmoke;
+}
+.servicio{
+ display: grid;
+ grid-template-columns: repeat(2,1fr);
+}
+.color{
+    color: blueviolet;
+    font-size: 20px;
+}
+.pie{
+   background-color: black;
+   color: white;
+   text-align: center;
+}
+.option{
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+}
+button{
+    justify-content: center;
+    background-color: #17203d;
+    color: #f5efef;
+    padding: 0.5rem;
+    border: none;
+    width: 80%;
+    border-radius: 5px;
+}
+button:hover {
+    background-color: #ce1fce;
+}
+a{
+    text-decoration: none;
+    color: white;
+}

@@ -1,0 +1,86 @@
+[
+    {
+        "modelo":"Iphone 13",
+        "lanzamiento":" Año 2024 (Sellado)",
+        "precio":"15000 Bs",
+        "imagen":"imagenes/imagen2.jpg" ,
+        "enlace":"proc/uno.html"
+    },
+    {
+        "modelo":"Honor-200-lite",
+        "lanzamiento":" Año 2024",
+        "precio":"3500 Bs",
+        "imagen":"imagenes/celulares/Honor-200-Lite,-5G,-256GB,-Midnight-Black.jpeg" ,
+        "enlace":"proc/dos.html"
+    },
+    {
+        "modelo":"Samsung Galaxy Z5 Fold",
+        "lanzamiento":" Año 2020",
+        "precio":"4200 Bs",
+        "imagen":"imagenes/celulares/galaxy.jpg_279327997.webp" ,
+        "enlace":"proc/tres.html"
+    },
+    {
+        "modelo":"Samsung Galaxy A52",
+        "lanzamiento":" Año 2022",
+        "precio":"3000 Bs",
+        "imagen":"imagenes/productos/img1.jpg" ,
+        "enlace":"proc/cuatro.html"
+    },
+    {
+        "modelo":"Motorola ZTE",
+        "lanzamiento":" Año 2016",
+        "precio":"1500 Bs",
+        "imagen":"imagenes/productos/img2.jpeg" ,
+        "enlace":"proc/cinco.html"
+    },
+    {
+        "modelo":"Samsung GAlaxy S24 Ultra",
+       "lanzamiento":" Año 2024",
+        "precio":"22500 Bs",
+        "imagen":"imagenes/productos/img3.jpg" ,
+        "enlace":"proc/seis.html"
+    },
+    {
+        "modelo":"Honor 50 Lite",
+        "lanzamiento":" Año 2024",
+        "precio":"4560 Bs",
+        "imagen":"imagenes/productos/img4.jpg" ,
+        "enlace":"proc/siete.html"
+    },
+    {
+        "modelo":"Honor Magic 5lite",
+        "lanzamiento":" Año 2024",
+        "precio":"3500 Bs",
+        "imagen":"imagenes/productos/img3.jpeg" ,
+        "enlace":"proc/ocho.html"
+    },
+    {
+        "modelo":"Lenovo 5G",
+        "lanzamiento":" Año 2019",
+        "precio":"2500 Bs",
+        "imagen":"imagenes/productos/img6.jpg" ,
+        "enlace":"proc/nueve.html"
+    },
+    {
+        "modelo":"Huawei 11PRO",
+        "lanzamiento":" Año 2021",
+        "precio":"2500 Bs",
+        "imagen":"imagenes/productos/img101.jpg" ,
+        "enlace":"proc/diez.html"
+    },
+    {
+        "modelo":"Xiaomi 11 Lite",
+        "lanzamiento":" Año 2022",
+        "precio":"3200 Bs",
+        "imagen":"imagenes/productos/img8.jpg" ,
+        "enlace":"proc/once.html"
+    },
+    {
+        "modelo":"Realme C33",
+       "lanzamiento":" Año 2020",
+        "precio":"1800 Bs",
+        "imagen":"imagenes/productos/img9.jpg" ,
+        "enlace":"proc/doce.html"
+    }
+]

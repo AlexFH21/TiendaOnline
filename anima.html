@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comentarios</title>
+    <link rel="stylesheet" href="css/anima.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+                <a href="index.html">VOLVER AL INICIO</a>
+    </header>
+    <main>
+        <video width="650" height="400" controls >
+            <source src="video/Download (10).mp4" type="video/mp4">
+        </video>
+        <section class="menu">
+            <h1>PREGUNTAS FRECUENTES</h1>
+            <br>
+            <form>
+                <h4>¿Cual celular es el mas economico?</h2>
+                 <p> El propietario esta respondiendo..........</p>
+                <h4>¿Que cubre la garantia de la tienda?</h4>
+                 <p> El propietario esta respondiendo.........</p>
+                <br>
+                <br>
+                <input type="text" id="name" placeholder="Nombre de Usuario" required>
+                <br>
+                <textarea id="comment" placeholder="Escribe tu comentario" required></textarea>
+                <br>
+                <button id="submit">Publicar Comentario </button>
+            </form>
+            <div id="comments-container"></div>
+    </main>
+    
+    <script>
+        let comments = [];
+
+        document.getElementById('submit').addEventListener('click', (e) => {
+            e.preventDefault();
+            const name = document.getElementById('name').value;
+            const comment = document.getElementById('comment').value;
+            const newComment = {
+                name: name,
+                comment: comment
+            };
+            comments.push(newComment);
+            renderComments();
+            document.getElementById('name').value = '';
+            document.getElementById('comment').value = '';
+        });
+
+        function renderComments() {
+            const commentsContainer = document.getElementById('comments-container');
+            commentsContainer.innerHTML = '';
+            comments.forEach((comment) => {
+                const commentHTML = `
+                    <div class="comment">
+                        <h4>${comment.name}</h4>
+                        <p>${comment.comment}</p>
+                    </div>
+                `;
+                commentsContainer.innerHTML += commentHTML;
+            });
+        }
+    </script>
+    <div class="pie">
+        <h3>TIENDA ONLINE " AFHPHONE " - de celulares de las marcas HONOR - REDMI - SAMSUNG Y IPHONE</h3>
+        <h3>ORURO - BOLIVIA contactos al celular - 68297841</h3>
+        <h3>copyright FernandezHerrera783@gmail.com</h3>
+    </div>
+</body>
+</html>

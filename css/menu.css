@@ -1,0 +1,187 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 99%;
+    text-align: center;
+    background-image: url('../imagenes/fondo.png');
+}
+/* Primer punto de quiebre */
+@media(min-width:768px){
+    .menu{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+  }
+  /* Segundo punto de quiebre */
+  @media(min-width:900px){
+    .menu{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        }
+  }
+  /* Tercer punto de quiebre */
+  @media(min-width:1000px){
+    .menu{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        }
+  }
+.logo{
+    padding: 1.2rem;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    border-bottom: solid 2px rgb(18, 171, 231);
+    border-radius: 10px;
+}
+h2{
+    padding: 1rem;
+    color: white;
+    line-height: 10rem;
+    text-align: justify;
+    text-decoration: underline;
+}
+.opciones{
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    transition: 5s;
+    font-family:fantasy;
+    box-shadow: 3px 3px 3px rgb(233, 16, 143);
+}
+.opciones:hover{
+    background-image: url('../imagenes/compra/img4.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-size: 14.5px;
+    border-radius: 15px;
+    border-bottom: solid 2px greenyellow;
+    }
+a{
+    text-decoration: none;
+    padding: 1rem;
+    text-align: center;
+    color: rgb(253, 252, 252);
+}
+.rock-salt-regular{
+    font-family: "Rock Salt",cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    border-top: solid 2px rgb(7, 133, 236);
+    border-radius: 10px;
+  }
+.mensaje{
+    font-size: large;
+    padding: 1rem;
+    text-align: center;
+    font-family:'Trebuchet MS', sans-serif;
+    color: aliceblue;
+    text-shadow: 2px 2px 2px rgb(84, 7, 226);
+}
+span{
+    color: aquamarine;
+}
+hr{
+    background-color: rgb(41, 201, 68);
+    height: 2px;
+}
+h4{
+    color: white;
+    text-align: center;
+}
+.menu{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: stretch;
+    padding: 2rem;
+}
+.box{
+    margin: 25px;
+    text-align: center;
+    border-radius: 12px;
+}
+.movimiento{
+    width: 250px;
+    height: 250px;
+    position: relative;
+    animation: mover 4s infinite;
+}
+@keyframes mover {
+    0% {left: 0;}
+    50% {left: 25px;}
+    100% {left: 0;}
+}
+h3{
+    background-color: rgb(15, 15, 15);
+    position:relative;
+    padding: 0.5rem;
+    border-radius: 5px;
+    animation: mover1 4s infinite;
+}
+@keyframes mover1 {
+    0% {right: 0;}
+    50% {right: 25px;}
+    100% {right: 0;}
+}
+h3 :hover{
+    background-color: rgb(231, 9, 183);
+    border-radius: 15px;
+}
+p{
+    background-color: black;
+    color: white;
+    padding: 0.5rem;
+    border-radius: 10px;
+}
+p:hover{
+    background-color: rgb(18, 171, 231);
+}
+.section{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.texto {
+    animation: mostrar-ocultar 10s infinite; /* Duración: 5 segundos, infinitas repeticiones */
+  }
+  @keyframes mostrar-ocultar {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0; 
+    }
+  }
+.section2{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+}
+img{
+    text-align: center;
+    border-radius: 5px;
+    padding: 0.5rem;
+}
+.icono {
+    padding: 0.5rem;
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+}
+.icono:hover {
+    transform: scale(1.5);
+}
+.pie{
+    display: grid;
+    grid-template-columns: 1fr,2fr;
+    text-align: center;
+    line-height: 2rem;
+    padding: 1rem;
+    font-size: 14px;
+    box-shadow: 3px 3px 3px 3px aqua;
+    font-family: monospace;
+}

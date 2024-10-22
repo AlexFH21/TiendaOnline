@@ -1,0 +1,91 @@
+body{
+    background-color: rgb(201, 201, 201);
+}
+/* Primer punto de quiebre */
+@media(min-width:768px){
+    .table{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+  }
+  /* Segundo punto de quiebre */
+  @media(min-width:900px){
+    .table{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        }
+  }
+  /* Tercer punto de quiebre */
+  @media(min-width:1000px){
+    .table{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        }
+  }
+nav ul{
+    text-align: center;
+    background-color: rgb(97, 94, 94);
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    padding: 1rem;
+}
+a {
+    color:rgb(247, 247, 247);
+    text-decoration: none;
+}
+.black-ops-one-regular{
+    font-family: "Black Ops One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }  
+h1{
+    text-align: center;
+    font-size: 50px;
+}
+h1:hover{
+    box-shadow: 3px 3px 3px rgb(5, 5, 5);
+}
+h2{
+    color: white;
+}
+p{
+    color: white;
+    padding: 0.2rem;
+    border: solid 1px rgb(215, 228, 225);
+    border-radius: 5px;
+    font-family:monospace;
+    font-size: 14px;
+
+}
+p:hover{
+    background-color: rgb(83, 81, 81);
+    box-shadow: 3px 3px 3px rgb(10, 135, 238);
+    cursor:pointer;
+}
+img{
+    border: 1px solid rgb(228, 229, 233);
+    padding: 1rem;  
+    transition: transform 0.3s;
+}
+img:hover {
+    transform: scale(1.1); 
+    box-shadow: 4px 4px 4px rgb(235, 11, 198);
+  }
+.pie{
+    color: rgb(14, 13, 13);
+    text-align: center;
+    font-family: monospace;
+}
+.redes-sociales{
+    text-align: center;
+  }
+.icono{
+    padding: 0.5rem;
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+    transition: transform 0.2s ease-in-out;
+}
+.icono:hover {
+    transform: scale(1.5);
+}
